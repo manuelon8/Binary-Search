@@ -5,20 +5,24 @@ import app.main.developments.OrderIntArrrays;
 public class app {
 
 	public static void main(String[] args) {
-		int[] arrInt = {6,5,7,2,11,67,23};
-		OrderIntArrrays or = new OrderIntArrrays(arrInt);
+		int[] arrInt = {6,5,7,2,11,67,23,34};
+		
+		
+		OrderIntArrrays or = new OrderIntArrrays(arrInt); 
+		 
+		
+		or.printArray(); 
 		System.out.println("\n--------START SYSTEM--------");
-		or.printArray();
+		
 		System.out.println("\nTHE FIRST VALUES IS: " + or.first());
-		System.out.println("\nTHE LAST VALUE IS: " + or.last());
-		System.out.println("Find a Element Por Posicion" + or.find(11));
-		System.out.println("Delete a Element Por Posicion" + or.delete(4));
-		or.insert(15);
-		System.out.println("Insertar 15 un Element Por Posicion" );
-		
+		System.out.println("\nTHE LAST VALUE IS: " + or.last());		
+		System.out.println("***Encontrar la Posicion de 23***");
+		System.out.println(or.findValue(23));
+		System.out.println("Delete el value 5 del vector");
+		or.delete(5);
+		or.insert(89); 		
 		or.printArray();
-		
-		
+ 		
 		System.out.println("--------END SYSTEM--------");
 
 	}
